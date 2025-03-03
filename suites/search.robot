@@ -1,0 +1,23 @@
+*** Settings ***
+Library    AppiumLibrary
+Resource   ../resources/variables.robot
+Resource   ../pageObjects/searchPage.robot
+
+Test Setup    Open Application
+Test Teardown    Close Application
+
+*** Keywords ***
+Open Application
+    Open Application    ${APPIUM_SERVER}    
+    ...    platformName=${PLATFORM_NAME}    
+    ...    deviceName=${DEVICE_NAME}    
+    ...    appPackage=${APP_PACKAGE}    
+    ...    appActivity=${APP_ACTIVITY}    
+    ...    automationName=UiAutomator2
+
+Close Application
+    Close Application
+
+*** Test Cases ***
+User Should Be Able To Search Flights
+    Search for Flight
