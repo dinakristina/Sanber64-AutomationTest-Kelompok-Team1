@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-11T22:11:33.465606" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="C:\Users\Dina Kristina\Documents\Sanber64-AutomationTest-Kelompok-Team1\login.robot">
+<test id="s1-t1" name="Login Test" line="12">
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-03-11T22:11:35.942871" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-03-11T22:11:35.942564" elapsed="0.006526">No application is open</status>
+</kw>
+<msg time="2025-03-11T22:11:35.950326" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-03-11T22:11:35.951670" level="FAIL">WebDriverException: Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
+</msg>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>automationName=UiAutomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-03-11T22:11:33.808729" elapsed="2.145581">WebDriverException: Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
+</status>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<arg>id=com.example.myapplication:id/username</arg>
+<arg>support@ngendigital.com</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="NOT RUN" start="2025-03-11T22:11:35.954956" elapsed="0.000038"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<arg>id=com.example.myapplication:id/password</arg>
+<arg>abc123</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="NOT RUN" start="2025-03-11T22:11:35.955507" elapsed="0.000032"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>id=com.example.myapplication:id/login</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" start="2025-03-11T22:11:35.956084" elapsed="0.000040"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<arg>id=com.example.myapplication:id/home_screen</arg>
+<arg>10s</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" start="2025-03-11T22:11:35.956711" elapsed="0.000038"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="NOT RUN" start="2025-03-11T22:11:35.957334" elapsed="0.000039"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="NOT RUN" start="2025-03-11T22:11:35.957828" elapsed="0.000038"/>
+</kw>
+<status status="FAIL" start="2025-03-11T22:11:33.807370" elapsed="2.151005">WebDriverException: Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
+</status>
+</test>
+<test id="s1-t2" name="Search Booking Test" line="26">
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-03-11T22:11:38.015649" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-03-11T22:11:38.015283" elapsed="0.003455">No application is open</status>
+</kw>
+<msg time="2025-03-11T22:11:38.020025" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-03-11T22:11:38.021396" level="FAIL">WebDriverException: Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
+</msg>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-03-11T22:11:35.961247" elapsed="2.062579">WebDriverException: Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
+</status>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<arg>id=com.example.myapplication:id/search_box</arg>
+<arg>DA935</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="NOT RUN" start="2025-03-11T22:11:38.024644" elapsed="0.000078"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>id=com.example.myapplication:id/button6</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" start="2025-03-11T22:11:38.025256" elapsed="0.000035"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<arg>id=com.example.myapplication:id/result_screen</arg>
+<arg>10s</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" start="2025-03-11T22:11:38.025793" elapsed="0.000046"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="NOT RUN" start="2025-03-11T22:11:38.026318" elapsed="0.000044"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="NOT RUN" start="2025-03-11T22:11:38.026888" elapsed="0.000041"/>
+</kw>
+<status status="FAIL" start="2025-03-11T22:11:35.960568" elapsed="2.066873">WebDriverException: Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
+</status>
+</test>
+<status status="FAIL" start="2025-03-11T22:11:33.468278" elapsed="4.561555"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login" id="s1" pass="0" fail="2" skip="0">Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-03-11T22:11:35.950326" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-03-11T22:11:38.020025" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
